@@ -45,9 +45,9 @@ app.directive('chart', function($http) {
 							pointStrokeColor: "#fff",
 							data: yaw
 						}, {
-							fillColor: "rgba(151,187,205,0.5)",
-							strokeColor: "rgba(151,187,205,1)",
-							pointColor: "rgba(151,187,205,1)",
+							fillColor: "rgba(101,107,205,0.5)",
+							strokeColor: "rgba(101,107,205,1)",
+							pointColor: "rgba(101,107,205,1)",
 							pointStrokeColor: "#fff",
 							data: roll
 						}]
