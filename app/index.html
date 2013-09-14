@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>MyoPhysio</title>
-  <link rel="stylesheet" href="css/app.css"/>
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="css/app.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-  <div id="head" class="jumbotron text-center">MyoPhysio</div>
-
-  <div ng-view>
+  <div id="container">
+    <div class="row">
+      <div id="head" class="jumbotron text-center">MyoPhysio</div>
+    </div>
+    <div ng-view>
+    </div>
+    <div id="footer">Angular seed app: v<span app-version></span></div>
   </div>
-
-  <div id="footer">Angular seed app: v<span app-version></span></div>
-
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
