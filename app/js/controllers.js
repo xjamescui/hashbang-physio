@@ -21,8 +21,6 @@ controller('mainCtrl', ['$scope', '$http',
 				// or server returns response with an error status.
 				console.log('get error');
 			});
-
-
 		}
 
 	}
