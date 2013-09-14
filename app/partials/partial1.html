@@ -1,17 +1,21 @@
 <div ng-init="init()">
-<div id="drop-menu">
-	<p>Select your exercise:
-		<select>
-			<option value="{{ ex }}" ng-repeat="ex in exercises">{{ ex }}</option>
-		</select>
-	</p>
-</div>
 <div id="container">
 	<div class="row">
-	  <div id="demo-pic" class="col-sm-5">
-	    <p>PICTURE GOES HERE</p>
+		<div id="drop-menu" class="text-center">
+			<p>Select your exercise:
+				<select>
+					<option value="{{ ex }}" ng-repeat="ex in exercises">{{ ex }}</option>
+				</select>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+	  <div id="demo-pic" class="col-sm-5 text-center">
+	    <p><img src="img/person.png"></p>
+	    <p>Raise your arm!</p>
 	  </div>
-	  <div id="feedback" class="col-sm-7">
+	  <div id="feedback" class="col-sm-7 text-center">
+	    <p><img src="img/check.png"></p>
 	    <p>GOOD JOB!</p>
 	  </div>
 	</div>
