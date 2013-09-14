@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-controller('mainCtrl', ['$scope', '$http',
+controller('patientCtrl', ['$scope', '$http',
 	function($scope, $http) {
 		$scope.identity = "Patient";
 		$scope.exercises = ["shoulder rotate", "arm raise"];
@@ -26,7 +26,7 @@ controller('mainCtrl', ['$scope', '$http',
 
 	}
 ])
-	.controller('MyCtrl2', ['$scope',
+	.controller('physioCtrl', ['$scope',
 		function($scope) {
 			$scope.identity= "Physiotherapist";
 		}

@@ -3,16 +3,17 @@
 	<div class="row">
 		<div id="drop-menu" class="text-center">
 			<p>Select your exercise:
-				<select>
-					<option value="{{ ex }}" ng-repeat="ex in exercises">{{ ex }}</option>
+				<select ng-model="exercise">
+					<option value="{{ ex }}" ng-repeat="ex in exercises" >{{ ex }}</option>
 				</select>
 			</p>
 		</div>
 	</div>
 	<div class="row">
 	  <div id="demo-pic" class="col-sm-5 text-center">
-	    <p><img src="img/person_raisearm.png"></p>
-	    <p>Raise your arm!</p>
+	  	<p ng-hide="exercise != null || exercise != undefined">Pick an exercise!</p>
+	    <p ng-show="exercise == 'shoulder rotate'"><img  src="img/person_raisearm.png">Rotate your shoulder!</p>
+	    <p ng-show="exercise == 'arm raise'"><img  src="img/">Raise your arm!</p>
 	  </div>
 	  <div id="feedback" class="col-sm-7 text-center">
 	    <p><img src="img/check.png"></p>
