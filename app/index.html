@@ -2,7 +2,7 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
+  <title>MyoPhysio</title>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
@@ -11,9 +11,11 @@
     <li><a href="#/view2">view2</a></li>
   </ul>
 
+  <div id="head">MyoPhysio</div>
+
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div id="footer">Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
