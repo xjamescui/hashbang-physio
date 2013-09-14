@@ -2,7 +2,7 @@
 
 
 /*#### Import Fonts ####*/
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700);
 
 
 
@@ -34,12 +34,25 @@ strong {
   font-weight: 700;
 }
 
+.light {
+  font-weight: 100;
+}
+
+.heavy {
+  font-weight: 700;
+}
+
+.bigred{
+  color: #ff2222;
+  font-size: 140%;
+}
+
 /*#### Main ID Styles ####*/
 
 #head {
   background: #2ecc71;
   color: #ffffff;
-  font-size: 350%;
+  font-size: 450%;
   margin: 0;
 }
 

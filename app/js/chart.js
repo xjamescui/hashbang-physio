@@ -1,3 +1,5 @@
+$(document).ready(function () { 
+
 //Get the context of the canvas element we want to select
 var ctx = $("#chart").get(0).getContext("2d");
 // console.log(chart);
@@ -26,3 +28,5 @@ if (ctx != undefined) {
 	new Chart(ctx).Line(data);
 	alert("chart is ready");
 }
+
+});
