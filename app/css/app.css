@@ -75,6 +75,19 @@ strong {
   width: 400px;
 }
 
+.menu {
+  padding: 20px 20px 5px 10px;
+}
+
+.menu a {
+  color: #3498db;
+}
+
+.menu-des {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
 #feedback {
   padding: 30px;
   background: #232323;
