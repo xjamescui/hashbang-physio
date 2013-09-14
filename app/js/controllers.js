@@ -3,11 +3,33 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', ['$scope',function(scope) {
-  	scope.hi = "hi";
-  	scope.exercises = ["shoulder rotate", "arm raise"];
+controller('mainCtrl', ['$scope', '$http',
+	function($scope, $http) {
 
-  }])
-  .controller('MyCtrl2', [function() {
+		$scope.exercises = ["shoulder rotate", "arm raise"];
 
-  }]);
+		$scope.init = function() {
+
+			$http.get('http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=demo').
+			success(function(data, status, headers, config) {
+				// this callback will be called asynchronously
+				// when the response is available
+				$scope.data = data;
+
+
+			}).
+			error(function(data, status, headers, config) {
+				// called asynchronously if an error occurs
+				// or server returns response with an error status.
+			});
+
+
+		}
+
+	}
+])
+	.controller('MyCtrl2', [
+		function() {
+
+		}
+	]);
