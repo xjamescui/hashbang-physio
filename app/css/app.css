@@ -1,5 +1,59 @@
-/* app css stylesheet */
+/*#### MyoPhysio Styles ####*/
 
+
+/*#### Import Fonts ####*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+
+
+
+/*#### General Styles ####*/
+html, body, h1, h2, h3, p, li {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  padding: 10px;
+}
+
+/*#### Main ID Styles ####*/
+
+#head {
+  background: #2ecc71;
+  font-weight: 700;
+}
+
+#demo-pic {
+  background: #f4f4f4;
+}
+
+#drop-menu {
+
+}
+
+#feedback {
+
+}
+
+#graph {
+
+}
+
+#stats {
+  background: #2c3e50;
+  color: #d35400;
+  font-family: 'consolas', courier, monospace;
+}
+
+#footer {
+  background: #232323;
+  color: #ffffff;
+  text-align: center;
+  font-size: 70%;
+}
+
+/* app css stylesheet */
+/*
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -28,3 +82,4 @@
   content: "";
   padding: 0;
 }
+*/
