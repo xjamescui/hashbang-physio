@@ -1,16 +1,32 @@
 <div ng-init="init()">
-<select id="drop-menu">
-	<option value="{{ ex }}" ng-repeat="ex in exercises">{{ ex }}</option>
-</select>
-
-<div><div>Testing out api $http calls.... www.google.com</div>
-{{data.status.message}}
+<div id="drop-menu">
+	<p>Select your exercise:
+		<select>
+			<option value="{{ ex }}" ng-repeat="ex in exercises">{{ ex }}</option>
+		</select>
+	</p>
 </div>
-
-<div id="feedback"> feedback here... </div>
-
-<div id="graph"> graph here </div>
-
-<div id="stats">stats here...</div>
-
+<div id="container">
+	<div class="row">
+	  <div id="demo-pic" class="col-sm-5">
+	    <p>PICTURE GOES HERE</p>
+	  </div>
+	  <div id="feedback" class="col-sm-7">
+	    <p>GOOD JOB!</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div id="graph" class="col-sm-12">
+	    <p>DATA POINTS GO HERE</p>
+	    <div>
+	    	<div>Testing out api $http calls.... random api site</div>
+			{{data}}
+		</div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div id="stats" class="col-sm-12">
+	    <p>STATS GO HERE</p>
+	  </div>
+	</div>
 </div>
