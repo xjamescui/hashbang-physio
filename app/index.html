@@ -4,16 +4,14 @@
   <meta charset="utf-8">
   <title>MyoPhysio</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <meta name="viewport" content="initial-scale=1">
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  <div id="head" class="jumbotron text-center">MyoPhysio</div>
 
-  <div id="head">MyoPhysio</div>
-
-  <div ng-view></div>
+  <div ng-view>
+  </div>
 
   <div id="footer">Angular seed app: v<span app-version></span></div>
 

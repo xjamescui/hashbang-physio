@@ -16,11 +16,16 @@ p {
   padding: 10px;
 }
 
+strong {
+  font-weight: 700;
+}
+
 /*#### Main ID Styles ####*/
 
 #head {
   background: #2ecc71;
-  font-weight: 700;
+  color: #ffffff;
+  font-size: 350%;
 }
 
 #demo-pic {
@@ -28,7 +33,7 @@ p {
 }
 
 #drop-menu {
-
+  padding: 10px;
 }
 
 #feedback {
@@ -41,8 +46,7 @@ p {
 
 #stats {
   background: #2c3e50;
-  color: #d35400;
-  font-family: 'consolas', courier, monospace;
+  color: #ffffff;
 }
 
 #footer {
