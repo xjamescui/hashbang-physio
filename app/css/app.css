@@ -113,6 +113,16 @@ strong {
   padding: 40px 0;
 }
 
+
+/*#### Therapist Styles ####*/
+
+#patient-info {
+  background: #555555;
+  color: #ffffff;
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+
 /* app css stylesheet */
 /*
 .menu {
