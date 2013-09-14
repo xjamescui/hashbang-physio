@@ -1,10 +1,5 @@
 {
-	"shoulder_rotate": {
-		"set_count": 1
-	},
-
-	"arm_raise": {
-		"set_count": 2
-	}
-
+	"yaw" :[0,23,24],
+	"pitch" :[0,23,24],
+	"roll" :[0,23,24]
 }

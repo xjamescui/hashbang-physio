@@ -16,7 +16,7 @@ controller('patientCtrl', ['$scope', '$http',
 				// this callback will be called asynchronously
 				// when the response is available
 
-				$scope.shoulder_rotation_count = data.shoulder_rotate.set_count;
+				//$scope.shoulder_rotation_count = data.shoulder_rotate.set_count;
 			}).
 			error(function(data, status, headers, config) {
 				// called asynchronously if an error occurs
@@ -35,8 +35,8 @@ controller('patientCtrl', ['$scope', '$http',
 			success(function(data, status, headers, config) {
 				// this callback will be called asynchronously
 				// when the response is available
-				$scope.arm_raise_count = data.arm_raise.set_count;
-				$scope.shoulder_rotate_count = data.shoulder_rotate.set_count;
+				//$scope.arm_raise_count = data.arm_raise.set_count;
+				//$scope.shoulder_rotate_count = data.shoulder_rotate.set_count;
 			}).
 			error(function(data, status, headers, config) {
 				// called asynchronously if an error occurs
