@@ -1,0 +1,19 @@
+{
+	"name": "myophysio",
+		"description": "A starter project for angular js",
+		"scripts": {
+			"start": "node ./web-server.js"
+		},
+	"version": "0.0.1",
+	"engines": {
+		"node": ">= 0.8"
+	},
+	"subdomain" : "myophysio",
+	"devDependencies": {
+		"phantomjs" : "*",
+		"karma" : "*",
+		"karma-junit-reporter" : "*",    
+		"karma-jasmine" : "*",
+		"karma-ng-scenario" : "*"
+	}
+}

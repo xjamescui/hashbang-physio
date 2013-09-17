@@ -5,16 +5,16 @@
 var module = angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']);
 module.config(['$routeProvider',
 	function($routeProvider) {
-		$routeProvider.when('/view1', {
+		$routeProvider.when('/patient', {
 			templateUrl: 'partials/partial1.html',
 			controller: 'patientCtrl'
 		});
-		$routeProvider.when('/view2', {
+		$routeProvider.when('/physiotherapist', {
 			templateUrl: 'partials/partial2.html',
 			controller: 'physioCtrl'
 		});
 		$routeProvider.otherwise({
-			redirectTo: '/view1'
+			redirectTo: '/patient'
 		});
 	},
 ]);
